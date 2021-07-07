@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+  <style>
+    table,
+    td{
+      width: 15%;
+    }
+
+  </style>
+</head>
+<body>
+
+<hr style="height: 2px;background-color: lightgray">
+<h2> Market Research Survey</h2>
+<p> Please take a few moments to complete this satisfaction survey.</p>
+<hr>
+<form>
+<div>
+  <label name="agerange"> What is your age range?</label> <br>
+  <select name="agerange">
+    <option value="18-24"> 19-24 </option>
+    <option value="25-34"> 25-34 </option>
+    <option value="35-50"> 35-50 </option>
+    <option value="50+"> 50+ </option>
+  </select> <br>
+</div>
+
+  <div>
+  <label name="incomerange"> What is your yearly income range?</label> <br>
+  <select name="incomrange">
+    <option value="0-25k"> $0 - $25,000 </option>
+    <option value="25k-50k"> $25,001 - $50,000 </option>
+    <option value="50k-100k"> $50,001 - $100,000 </option>
+    <option value="100k+"> $100,000+ </option>
+  </select> <br> <br>
+  </div>
+
+  <div>
+  <label name="gender"> Gender Identity</label> <br>
+    <input type="radio" name="gender"/> Male <br>
+    <input type="radio" name="gender"/> Femail <br>
+    <input type="radio" name="gender"/> Nonbinary <br>
+    <input type="radio" name="gender" /> Other <br>
+    <input type="text" name="gender" max="250" min="0" style="margin-left: 25px"/>
+    <p style="margin-left: 25px"> Maximum of 250 characters. <i style="margin-left: 50px">Currently used: 0 characters</i></p>
+  <br>
+  </div>
+
+  <div>
+  <label name="bought"> Which of the folloing products have your purchased in the last 2 months. Please check all that apply</label> <br>
+    <input type="checkbox" name="bought"/> Product 1 <br>
+    <input type="checkbox" name="bought"/> Product 2 <br>
+    <input type="checkbox" name="bought"/> Product 3 <br>
+  <br>
+  </div>
+
+  <div>
+  <label name="freq"> How often would you use our new product?</label> <br>
+  <input type="radio" name="freq"/> Daily <br>
+  <input type="radio" name="freq"/> Weekly <br>
+  <input type="radio" name="freq"/> Monthly <br>
+  <br>
+  </div>
+
+  <div>
+  <label name="money"> What would you pay for the new product?</label> <br>
+  $ <input type="text" name="dollar" style="width: 60px"/> . <input type="text" name="cents" style="width: 15px"/>
+  <br>
+  <label name="comment"> What features would you like to see in the new product.</label> <br>
+  <textarea name="newproduct" id="12" style="width: 100%" rows="10"></textarea> <br>
+  </div>
+
+  <div>
+  <br>
+  <label name="rate" > Please rate your level of agreement with the following statements</label><br>
+
+<table border="1" style="width: 100%">
+  <tr style="background-color: darkgray">
+    <th></th>
+    <th>Strongly Disagree</th>
+    <th>Disagree</th>
+    <th>Agree</th>
+    <th>Strongly Agree</th>
+  </tr>
+  <tr style="text-align: center">
+    <th style="text-align: left">Our Products are priced fairly</th>
+    <td><input type="radio" name="price"/> <br> 1 </td>
+    <td><input type="radio" name="price"/> <br> 2 </td>
+    <td><input type="radio" name="price"/> <br> 3</td>
+    <td><input type="radio" name="price"/> <br> 4 </td>
+  </tr>
+  <tr style="text-align: center;background-color: lightgray">
+    <th style="text-align: left">Our products are high quality</th>
+    <td><input type="radio" name="quality"/> <br> 1 </td>
+    <td><input type="radio" name="quality"/> <br> 2 </td>
+    <td><input type="radio" name="quality"/> <br> 3 </td>
+    <td><input type="radio" name="quality"/> <br> 4 </td>
+  </tr>
+  <tr style="text-align: center">
+    <th style="text-align: left;">You would recommend our product to a friend or coworker</th>
+    <td><input type="radio" name="recommend"/> <br> 1 </td>
+    <td><input type="radio" name="recommend"/> <br> 2 </td>
+    <td><input type="radio" name="recommend"/> <br> 3 </td>
+    <td><input type="radio" name="recommend"/> <br> 4 </td>
+  </tr>
+</table>
+  </div>
+
+  <input  type="submit" size="200">
+
+
+
+
+
+
+</form>
+</body>
+</html>
